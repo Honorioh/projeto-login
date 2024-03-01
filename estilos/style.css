@@ -38,6 +38,9 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px opx 10px rgba(0, 0, 0, 0.493);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease; /*essas duas funções é apra a mudança de uma tela pra outra ter uma leve animação*/
 }
 
 section#login >div#imagem {
