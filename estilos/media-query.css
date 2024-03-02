@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width:992px) {
-    body{
+    body{ /*configuração tablet*/
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
     
     section#login {
         width: 80vw; /*quando tiver o min de width vai virar 90%do vw*/
+        height: 280px;
     }
 
     section#login > div#imagem {
@@ -23,12 +24,13 @@
 }
 
 @media screen and (min-width: 992px) {
-    body{
+    body{ /*config telas grandes*/
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
     section#login {
         width: 990px; 
+        height: 285px;
     }
 
     section#login > div#imagem {

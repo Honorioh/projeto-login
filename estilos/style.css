@@ -71,15 +71,41 @@ div#formulario > p {
 
 form > div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo >label{
     display: none; /*para nao aparecer o nome menu e senha*/
+}
+
+div.campo > span {
+    color: white;
+   
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    transform: translateX(-25px);
+    
+}
+
+div.campo > input { /*para colocar o campo de senha e login no tamanho correto do campo*/
+    background-color: #82c0be;
+    font-size: 1em;
+    width: calc(100% - 69px); /*calcula o 100% da caixa menos o espaço da imagemdo span, menos 40px no caso*/
+    height: 100%;
+    transform: translateY(-12px) translateX(5px);
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within { /*isso é pra quando estiver digitando o campo fica branco*/
+    background-color: white;
 }
 
 form > input[type=submit] { /*para configurar o botão de entrar*/
